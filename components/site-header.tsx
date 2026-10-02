@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { formatDate } from "@/lib/format";
 
 export function Logo({ className }: { className?: string }) {
   return (
@@ -13,7 +12,7 @@ export function Logo({ className }: { className?: string }) {
   );
 }
 
-export function SiteHeader({ voteCutoff }: { voteCutoff: string | null }) {
+export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-black/[0.08] bg-white/70 backdrop-blur-2xl backdrop-saturate-150">
       <div className="mx-auto flex h-14 max-w-[1440px] items-center gap-3 px-4 sm:px-6">
@@ -36,19 +35,6 @@ export function SiteHeader({ voteCutoff }: { voteCutoff: string | null }) {
             </a>
           ))}
         </nav>
-        <div className="ml-auto flex items-center gap-2">
-          <span
-            title="Last data update"
-            className="inline-flex h-7 items-center gap-1.5 rounded-full px-2.5 text-[12px] text-muted-foreground ring-1 ring-black/[0.08] ring-inset"
-          >
-            <span className="relative flex size-1.5">
-              <span className="animate-ping-soft absolute inline-flex size-full rounded-full bg-positive" />
-              <span className="relative inline-flex size-1.5 rounded-full bg-positive" />
-            </span>
-            <span className="hidden sm:inline">Synced</span>
-            <span className="font-mono text-[11px] tabular-nums">{formatDate(voteCutoff)}</span>
-          </span>
-        </div>
       </div>
     </header>
   );

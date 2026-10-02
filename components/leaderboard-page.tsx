@@ -30,7 +30,7 @@ export function LeaderboardPage({
 }) {
   return (
     <>
-      <SiteHeader voteCutoff={leaderboard.voteCutoff} />
+      <SiteHeader />
       <div className="relative isolate">
         <div
           aria-hidden
