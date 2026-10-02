@@ -5,7 +5,7 @@ name: Sync arena.ai data
 # no build minutes.
 on:
   schedule:
-    - cron: "17 6 * * *"
+    - cron: "17 6,10,16 * * *"
   workflow_dispatch:
 
 permissions:
