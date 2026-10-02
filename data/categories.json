@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "overall",
+    "title": "Overall",
+    "icon": "🏆",
+    "group": "general",
+    "groupTitle": "General",
+    "description": null,
+    "default": true
+  },
+  {
+    "slug": "fullstack",
+    "title": "Fullstack",
+    "icon": "🧱",
+    "group": "general",
+    "groupTitle": "General",
+    "description": "View overall rankings across AI models on full-stack web development tasks: multi-step reasoning, tool use, and end-to-end app generation.",
+    "default": false
+  },
+  {
+    "slug": "frontend",
+    "title": "Frontend",
+    "icon": "🖥️",
+    "group": "general",
+    "groupTitle": "General",
+    "description": "View overall rankings across AI models on front-end web development tasks: multi-step reasoning, tool use, and HTML or React code generation.",
+    "default": false
+  },
+  {
+    "slug": "html",
+    "title": "HTML",
+    "icon": "html5",
+    "group": "frontend-technology",
+    "groupTitle": "Technology",
+    "description": "View overall rankings across AI models on front-end web development tasks: multi-step reasoning, tool use, and HTML code generation.",
+    "default": false
+  },
+  {
+    "slug": "react",
+    "title": "React",
+    "icon": "reactjs",
+    "group": "frontend-technology",
+    "groupTitle": "Technology",
+    "description": "View overall rankings across AI models on front-end web development tasks: multi-step reasoning, tool use, and React code generation.",
+    "default": false
+  },
+  {
+    "slug": "brand-marketing",
+    "title": "Brand & Marketing",
+    "icon": "📣",
+    "group": "domain",
+    "groupTitle": "Domain",
+    "description": null,
+    "default": false
+  },
+  {
+    "slug": "reference-based-design",
+    "title": "Reference-Based Design",
+    "icon": "🎨",
+    "group": "domain",
+    "groupTitle": "Domain",
+    "description": null,
+    "default": false
+  },
+  {
+    "slug": "data-analytics",
+    "title": "Data & Analytics",
+    "icon": "📊",
+    "group": "domain",
+    "groupTitle": "Domain",
+    "description": null,
+    "default": false
+  },
+  {
+    "slug": "consumer-product",
+    "title": "Consumer Product",
+    "icon": "📱",
+    "group": "domain",
+    "groupTitle": "Domain",
+    "description": null,
+    "default": false
+  },
+  {
+    "slug": "gaming",
+    "title": "Gaming",
+    "icon": "🎮",
+    "group": "domain",
+    "groupTitle": "Domain",
+    "description": null,
+    "default": false
+  },
+  {
+    "slug": "simulations",
+    "title": "Simulations",
+    "icon": "🧪",
+    "group": "domain",
+    "groupTitle": "Domain",
+    "description": null,
+    "default": false
+  },
+  {
+    "slug": "content-creation-tools",
+    "title": "Content Creation Tools",
+    "icon": "✏️",
+    "group": "domain",
+    "groupTitle": "Domain",
+    "description": null,
+    "default": false
+  }
+]
