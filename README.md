@@ -4,7 +4,7 @@ Interactive price–performance Pareto frontier for the [Code Arena WebDev leade
 
 - **Stack:** Next.js (App Router, fully static output), Tailwind CSS v4, custom SVG chart on `d3-scale` / `d3-zoom`.
 - **Data:** `data/` is produced by `scripts/fetch-arena.mjs`, which reads the leaderboard tables embedded in arena.ai pages.
-- **Auto-update:** `.github/workflows/sync-arena.yml` runs every 3 hours and commits `data/` only when arena.ai published new numbers; the push redeploys on Vercel.
+- **Auto-update:** `.github/workflows/sync-arena.yml` runs once a day (06:17 UTC) and commits `data/` only when arena.ai published new numbers; the push redeploys on Vercel.
 
 ## Develop
 
