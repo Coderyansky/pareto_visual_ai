@@ -327,7 +327,7 @@ export function ParetoChart({
               <tspan className="fill-foreground/50">{"  ·  cheaper →"}</tspan>
             </text>
             <text x={plot.x - 44} y={plot.y + plot.h / 2} transform={`rotate(-90 ${plot.x - 44} ${plot.y + plot.h / 2})`} textAnchor="middle" className="fill-muted-foreground text-[11.5px]">
-              {scoreMetric === "lower" ? "Arena score (95% CI lower bound)" : "Arena score"}
+              {scoreMetric === "lower" ? "Score (95% CI lower bound)" : "Score"}
             </text>
 
             <g clipPath="url(#plot-clip)">

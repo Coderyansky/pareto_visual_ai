@@ -1,8 +1,5 @@
-import { siGithub } from "simple-icons";
 import Link from "next/link";
 import { formatDate } from "@/lib/format";
-
-export const REPO_URL = "https://github.com/Coderyansky/pareto_visual_ai";
 
 export function Logo({ className }: { className?: string }) {
   return (
@@ -16,7 +13,7 @@ export function Logo({ className }: { className?: string }) {
   );
 }
 
-export function SiteHeader({ voteCutoff, sourceUrl }: { voteCutoff: string | null; sourceUrl: string }) {
+export function SiteHeader({ voteCutoff }: { voteCutoff: string | null }) {
   return (
     <header className="sticky top-0 z-40 border-b border-black/[0.08] bg-white/70 backdrop-blur-2xl backdrop-saturate-150">
       <div className="mx-auto flex h-14 max-w-[1440px] items-center gap-3 px-4 sm:px-6">
@@ -40,12 +37,9 @@ export function SiteHeader({ voteCutoff, sourceUrl }: { voteCutoff: string | nul
           ))}
         </nav>
         <div className="ml-auto flex items-center gap-2">
-          <a
-            href={sourceUrl}
-            target="_blank"
-            rel="noreferrer"
-            title="Data snapshot from arena.ai"
-            className="inline-flex h-7 items-center gap-1.5 rounded-full px-2.5 text-[12px] text-muted-foreground ring-1 ring-black/[0.08] ring-inset transition-colors hover:bg-black/[0.04] hover:text-foreground"
+          <span
+            title="Last data update"
+            className="inline-flex h-7 items-center gap-1.5 rounded-full px-2.5 text-[12px] text-muted-foreground ring-1 ring-black/[0.08] ring-inset"
           >
             <span className="relative flex size-1.5">
               <span className="animate-ping-soft absolute inline-flex size-full rounded-full bg-positive" />
@@ -53,18 +47,7 @@ export function SiteHeader({ voteCutoff, sourceUrl }: { voteCutoff: string | nul
             </span>
             <span className="hidden sm:inline">Synced</span>
             <span className="font-mono text-[11px] tabular-nums">{formatDate(voteCutoff)}</span>
-          </a>
-          <a
-            href={REPO_URL}
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Source on GitHub"
-            className="inline-flex size-7 items-center justify-center rounded-full bg-foreground text-white transition-transform hover:scale-[1.04]"
-          >
-            <svg viewBox="0 0 24 24" className="size-3.5" fill="currentColor" aria-hidden>
-              <path d={siGithub.path} />
-            </svg>
-          </a>
+          </span>
         </div>
       </div>
     </header>

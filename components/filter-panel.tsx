@@ -73,7 +73,7 @@ function CategoryPill({ category, active, href }: { category: Category; active: 
 }
 
 const RANGE_FIELDS: { key: RangeKey; label: string; log?: boolean; integer?: boolean; format: (v: number) => string }[] = [
-  { key: "score", label: "Arena score", integer: true, format: (v) => String(Math.round(v)) },
+  { key: "score", label: "Score", integer: true, format: (v) => String(Math.round(v)) },
   { key: "blended", label: "Blended price", log: true, format: formatPriceTick },
   { key: "input", label: "Input price", log: true, format: formatPriceTick },
   { key: "output", label: "Output price", log: true, format: formatPriceTick },

@@ -9,7 +9,7 @@ const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono"
 export const metadata: Metadata = {
   title: { default: "Pareto — WebDev model frontier", template: "%s · Pareto" },
   description:
-    "Interactive price–performance Pareto frontier of Code Arena WebDev leaderboards, synced automatically from arena.ai.",
+    "Interactive price–performance Pareto frontier of AI coding model leaderboards, updated automatically.",
 };
 
 export const viewport: Viewport = { themeColor: "#ffffff", colorScheme: "light" };
