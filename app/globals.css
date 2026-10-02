@@ -1,0 +1,182 @@
+@import "tailwindcss";
+
+/*
+ * Iris design system, light interpretation.
+ * Hierarchy is carried by contrast (opacity of near-black), never by hue.
+ * Outlines are inset rings of black at low opacity instead of borders/shadows;
+ * interactive elements are pills, containers use 18–24px radii.
+ */
+
+@theme inline {
+  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-popover: var(--popover);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-destructive: var(--destructive);
+  --color-positive: var(--positive);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+
+  --ease-out-fluid: cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+:root {
+  --radius: 0.625rem;
+
+  --background: #ffffff;
+  --foreground: #1d1d1f;
+  --card: #f5f5f7;
+  --popover: #ffffff;
+  --muted: #f5f5f7;
+  --muted-foreground: #6e6e73;
+  --primary: #1d1d1f;
+  --primary-foreground: #ffffff;
+  --destructive: #ff3b30;
+  --positive: #22c55e;
+  --border: #00000014;
+  --ring: #00000066;
+
+  --chart-1: #1d1d1f;
+  --chart-2: #48484a;
+  --chart-3: #8e8e93;
+  --chart-4: #c7c7cc;
+  --chart-5: #e5e5ea;
+
+  color-scheme: light;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+    outline-color: color-mix(in oklab, var(--ring) 50%, transparent);
+  }
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    background: var(--background);
+    color: var(--foreground);
+  }
+  ::selection {
+    background: #1d1d1f;
+    color: #fff;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    background-image: linear-gradient(to bottom, #1d1d1f, rgb(29 29 31 / 0.55));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .dot-grid {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.13) 1.1px, transparent 1.1px);
+    background-size: 22px 22px;
+  }
+
+  .hairline {
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.1), transparent);
+  }
+
+  /* Dual-thumb range: two stacked native inputs, only the thumbs take pointer events. */
+  .range-input {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    appearance: none;
+    background: transparent;
+    pointer-events: none;
+  }
+  .range-input::-webkit-slider-thumb {
+    appearance: none;
+    pointer-events: auto;
+    width: 16px;
+    height: 16px;
+    border-radius: 9999px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18), inset 0 0 0 1px rgba(0, 0, 0, 0.14);
+    cursor: grab;
+    transition: transform 150ms;
+  }
+  .range-input::-webkit-slider-thumb:active {
+    cursor: grabbing;
+    transform: scale(1.12);
+  }
+  .range-input::-moz-range-thumb {
+    pointer-events: auto;
+    width: 16px;
+    height: 16px;
+    border: none;
+    border-radius: 9999px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18), inset 0 0 0 1px rgba(0, 0, 0, 0.14);
+    cursor: grab;
+  }
+  .range-input:focus-visible::-webkit-slider-thumb {
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.12), inset 0 0 0 1px rgba(0, 0, 0, 0.3);
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@keyframes ping-soft {
+  75%,
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-ping-soft {
+  animation: ping-soft 1.6s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.reveal {
+  animation: reveal 1000ms cubic-bezier(0, 0, 0.2, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .animate-ping-soft {
+    animation: none;
+  }
+}
