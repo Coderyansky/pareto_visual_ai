@@ -210,8 +210,8 @@
       "scoreUpper": 1728.31,
       "scoreLower": 1680.51,
       "votes": 820,
-      "inputPrice": 0.834,
-      "outputPrice": 2.501,
+      "inputPrice": 0.7506,
+      "outputPrice": 2.2509,
       "context": 1048576,
       "prevRank": null,
       "prevScore": null
@@ -324,8 +324,8 @@
       "scoreUpper": 1705.83,
       "scoreLower": 1645.18,
       "votes": 551,
-      "inputPrice": 1.69,
-      "outputPrice": 5.07,
+      "inputPrice": 2,
+      "outputPrice": 6,
       "context": 1000000,
       "prevRank": null,
       "prevScore": null
@@ -856,8 +856,8 @@
       "scoreUpper": 1560.96,
       "scoreLower": 1515.82,
       "votes": 827,
-      "inputPrice": 0.132,
-      "outputPrice": 0.528,
+      "inputPrice": 0.0825,
+      "outputPrice": 0.33,
       "context": 262144,
       "prevRank": null,
       "prevScore": null
