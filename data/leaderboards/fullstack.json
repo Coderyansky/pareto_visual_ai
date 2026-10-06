@@ -514,8 +514,8 @@
       "scoreUpper": 1624.25,
       "scoreLower": 1585.73,
       "votes": 944,
-      "inputPrice": 0.7506,
-      "outputPrice": 2.2509,
+      "inputPrice": 0.834,
+      "outputPrice": 2.501,
       "context": 1048576,
       "prevRank": null,
       "prevScore": null
@@ -932,8 +932,8 @@
       "scoreUpper": 1563.2,
       "scoreLower": 1526.12,
       "votes": 1031,
-      "inputPrice": 0.0825,
-      "outputPrice": 0.33,
+      "inputPrice": 0.132,
+      "outputPrice": 0.528,
       "context": 262144,
       "prevRank": null,
       "prevScore": null
@@ -1274,8 +1274,8 @@
       "scoreUpper": 1483.32,
       "scoreLower": 1452.84,
       "votes": 1615,
-      "inputPrice": 0.55,
-      "outputPrice": 3.5,
+      "inputPrice": 0.45,
+      "outputPrice": 3,
       "context": 262144,
       "prevRank": null,
       "prevScore": null
