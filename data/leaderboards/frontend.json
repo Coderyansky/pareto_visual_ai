@@ -324,8 +324,8 @@
       "scoreUpper": 1662.33,
       "scoreLower": 1640.53,
       "votes": 3804,
-      "inputPrice": 0.834,
-      "outputPrice": 2.501,
+      "inputPrice": 0.7506,
+      "outputPrice": 2.2509,
       "context": 1048576,
       "prevRank": 17,
       "prevScore": 1652.12
@@ -1027,8 +1027,8 @@
       "scoreUpper": 1521.7,
       "scoreLower": 1501.91,
       "votes": 4365,
-      "inputPrice": 0.132,
-      "outputPrice": 0.528,
+      "inputPrice": 0.0825,
+      "outputPrice": 0.33,
       "context": 262144,
       "prevRank": 51,
       "prevScore": 1511.48
