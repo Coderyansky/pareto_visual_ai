@@ -495,8 +495,8 @@
       "scoreUpper": 1633.4,
       "scoreLower": 1596.41,
       "votes": 1162,
-      "inputPrice": 0.834,
-      "outputPrice": 2.501,
+      "inputPrice": 0.7506,
+      "outputPrice": 2.2509,
       "context": 1048576,
       "prevRank": 26,
       "prevScore": 1614.32
@@ -1027,8 +1027,8 @@
       "scoreUpper": 1532.65,
       "scoreLower": 1501.47,
       "votes": 1605,
-      "inputPrice": 0.132,
-      "outputPrice": 0.528,
+      "inputPrice": 0.0825,
+      "outputPrice": 0.33,
       "context": 262144,
       "prevRank": 53,
       "prevScore": 1517.11
@@ -1198,8 +1198,8 @@
       "scoreUpper": 1499.28,
       "scoreLower": 1457.52,
       "votes": 943,
-      "inputPrice": 1.027,
-      "outputPrice": 6.162,
+      "inputPrice": 1.268,
+      "outputPrice": 7.608,
       "context": 262144,
       "prevRank": 61,
       "prevScore": 1478.53
@@ -2167,8 +2167,8 @@
       "scoreUpper": 1364.61,
       "scoreLower": 1330.51,
       "votes": 1621,
-      "inputPrice": 0.43,
-      "outputPrice": 1.75,
+      "inputPrice": 0.5,
+      "outputPrice": 2,
       "context": 204800,
       "prevRank": 113,
       "prevScore": 1348.08
